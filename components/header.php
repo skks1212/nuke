@@ -15,7 +15,7 @@
             Catalogue
         </a>
         <a href="cart.php" class="nav_button">
-            <i class="far fa-shopping-cart"></i>
+            <i class="far fa-shopping-cart"></i> <?= isset($_SESSION["cart"]) ? count($_SESSION["cart"]) : "" ?>
         </a>
         <!--<a href="#" class="nav_button">
             <i class="far fa-heart"></i>

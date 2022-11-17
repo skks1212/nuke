@@ -5,13 +5,11 @@
 - [x] Login
 - [x] Register
 
-- [ ] Home
+- [x] Home
 - [ ] Profile
-- [ ] Cart
-- [ ] Checkout
-- [ ] Contact
+- [x] Cart
+- [x] Checkout
 
 - [ ] Admin
 - [ ] Products
 - [ ] Orders
-- [ ] Messages
