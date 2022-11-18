@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-?>
 <?php include "components/head.php" ?>
 
 <body class="bg-slate-900 text-white">
@@ -19,8 +14,7 @@ error_reporting(E_ALL);
             } else {
                 $cart = $_SESSION["cart"];
                 $products = mysqli_safe_query("SELECT * FROM products WHERE id IN (" . implode(",", $cart) . ")",);
-                while ($product = mysqli_fetch_assoc($products)) {
-                    $product = (object)$product;
+                while ($product = mysqli_fetch_object($products)) {
                     $total += $product->price;
                     $discounted += $product->price * (1 - ($product->discount / 100));
                     include "components/item.php";
