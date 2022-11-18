@@ -20,7 +20,7 @@ if (isset($_POST["email"])) {
             if ($row["admin"] == 1) {
                 $_SESSION["admin"] = true;
             }
-            header("Location: home.php");
+            header("Location: home");
         } else {
             $errors["password"] = "Invalid password";
         }

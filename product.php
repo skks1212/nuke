@@ -62,7 +62,7 @@ $product = mysqli_fetch_object($query)
                     console.log(res);
                     if (res === "success") {
                         if (redirect) {
-                            window.location.href = "checkout.php"
+                            window.location.href = "checkout"
                         } else {
                             window.location.reload();
                         }

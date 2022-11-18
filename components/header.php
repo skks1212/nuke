@@ -1,6 +1,6 @@
-<header class="fixed inset-x-0 top-0 flex items-center justify-between py-3 px-[calc(50vw-600px)] text-[#00E0C6] z-10">
+<header class="fixed inset-x-0 top-0 flex items-center justify-between py-3 px-[calc(50vw-600px)] text-cyan-400 z-10">
     <div class="flex items-center justify-center gap-4">
-        <div class="bg-[#00E0C6] rounded-full w-[60px] h-[60px] flex items-center justify-center">
+        <div class="bg-cyan-500 rounded-full w-[60px] h-[60px] flex items-center justify-center">
             <img src="med/logo.svg" class="w-[50px]" alt="Logo">
         </div>
         <div class="text-3xl font-bold">
@@ -29,7 +29,7 @@
         <?php
         } else {
         ?>
-            <a href="login" class="bg-[#009393] text-white px-4 py-2 ml-4 rounded transition-all hover:bg-[#016170]">
+            <a href="login" class="bg-cyan-500 text-white px-4 py-2 ml-4 rounded transition-all hover:bg-cyan-400">
                 Login
             </a>
         <?php
@@ -40,7 +40,7 @@
     </div>
 
     <script>
-        tc.c(".nav_button", "p-4 hover:text-[#00E0C6] text-[#009393] transition font-bold");
+        tc.c(".nav_button", "p-4 hover:text-cyan-400 text-cyan-500 transition font-bold");
         tc.c(".nav_button i", "text-xl");
     </script>
 </header>

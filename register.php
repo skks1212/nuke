@@ -65,9 +65,9 @@
                                 </div>
                                 <div class="field padding-bottom--24">
                                     <label for="phone">Phone Number</label>
-                                    <input type="phone" name="phone" value="<?php if (isset($phone)) {
-                                                                                echo $phone;
-                                                                            } ?>">
+                                    <input type="number" name="phone" value="<?php if (isset($phone)) {
+                                                                                    echo $phone;
+                                                                                } ?>" placeholder="Should be 10 digits">
                                     <?php if (isset($errors["phone"])) { ?>
                                         <span class="error"><?php echo $errors["phone"]; ?></span>
                                     <?php } ?>
@@ -75,11 +75,8 @@
                                 <div class="field padding-bottom--24">
                                     <div class="grid--50-50">
                                         <label for="password">Password</label>
-                                        <!--<div class="reset-pass">
-                      <a href="#">Forgot your password?</a>
-                    </div>-->
                                     </div>
-                                    <input type="password" name="password">
+                                    <input type="password" name="password" placeholder="Should be atleast 8 characters">
                                     <?php if (isset($errors["password"])) { ?>
                                         <span class="error"><?php echo $errors["password"]; ?></span>
                                     <?php } ?>
