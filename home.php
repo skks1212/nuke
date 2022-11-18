@@ -15,7 +15,6 @@
     <?php include "components/footer.php"; ?>
     <script>
         $(document).on("scroll", function() {
-            console.log($(this).scrollTop());
             if ($(this).scrollTop() > 200) {
                 $("#top-btn").css("visibility", "visible").css("opacity", "1");
             } else {

@@ -15,7 +15,7 @@ function mysqli_safe_query($query)
     global $con;
     $args = array_slice(func_get_args(), 1);
     $args = array_map('mysqli_safe_string', $args);
-    echo "<script>console.log(`" . vsprintf($query, $args) . "`)</script>";
+    //echo "<script>console.log(`" . vsprintf($query, $args) . "`)</script>";
     return mysqli_query($con, vsprintf($query, $args));
 }
 

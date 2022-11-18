@@ -20,7 +20,7 @@
                 $discounted += $product->price * (1 - ($product->discount / 100));
                 include "components/item.php";
             }
-        }
+
         ?>
     </div>
     Total : ₹<span class="line-through"><?= $total ?></span> ₹<span class="font-bold text-lg"><?= $discounted ?></span> <br>
@@ -28,7 +28,7 @@
     <a href="checkout.php" class="bg-[#009393] text-white w-full px-4 py-2 rounded-xl mt-2 hover:bg-[#016170] cursor-pointer">
         Continue Checkout
     </a>
-
+<?php } ?>
 </body>
 
 </html>

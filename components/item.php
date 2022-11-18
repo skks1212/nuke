@@ -28,6 +28,7 @@
         fetch("add-to-cart.php?id=" + id, {
             method: "GET",
         }).then((response) => response.text()).then((data) => {
+            console.log(data);
             if (data == "success") {
                 window.location.reload();
             }

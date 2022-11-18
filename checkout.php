@@ -50,8 +50,8 @@
             </form>
 
         </div>
-        <div class="bg-black/30 rounded-xl p-4 w-full md:w-[400px] shrink-0">
-            <table class="w-full">
+        <div class="bg-black/30 rounded-xl p-4 w-full md:w-1/2 shrink-0">
+            <table class="w-full h-full">
                 <thead>
                     <th>
                         No.
@@ -106,23 +106,23 @@
                         }
                     }
                     ?>
-                    <tr>
-                        <td class="font-bold">
-                            Total
-                        </td>
-                        <td colspan="1">
+                <tfoot>
+                    <td class="font-bold">
+                        Total
+                    </td>
+                    <td colspan="1">
 
-                        </td>
-                        <td>
-                            ₹<span class="line-through"><?= $total ?></span>
-                        </td>
-                        <td>
+                    </td>
+                    <td>
+                        ₹<span class="line-through"><?= $total ?></span>
+                    </td>
+                    <td>
 
-                        </td>
-                        <td>
-                            ₹<span class="font-bold text-lg"><?= $discounted ?></span>
-                        </td>
-                    </tr>
+                    </td>
+                    <td>
+                        ₹<span class="font-bold text-lg"><?= $discounted ?></span>
+                    </td>
+                </tfoot>
                 </tbody>
             </table>
         </div>
@@ -132,7 +132,8 @@
     <br>
 
     <script>
-        tc.c("td", "p-2");
+        tc.c("td, th", "p-2 border border-gray-700 text-left");
+        tc.c("th", "bg-gray-800");
     </script>
 </body>
 
