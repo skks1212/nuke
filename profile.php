@@ -35,9 +35,19 @@ if (!isset($user)) {
                         <?= $user->email ?>
                     </div>
                     <hr class="my-4 border-gray-800">
+                    <?php
+                    if ($user->admin == 1) {
+                    ?>
+                        <a href="admin" class="text-blue-400 hover:text-blue-500 mr-4">
+                            <i class="far fa-user-gear"></i> Admin Panel
+                        </a>
+                    <?php
+                    }
+                    ?>
                     <a href="logout" class="text-red-400 hover:text-red-500">
                         <i class="far fa-arrow-right-from-bracket"></i> Logout
                     </a>
+
                 </div>
 
             </div>
