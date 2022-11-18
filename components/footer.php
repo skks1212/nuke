@@ -1,4 +1,4 @@
-<footer class="bg-4 px-[calc(50vw-600px)] bg-black py-[50px] relative">
+<footer class="bg-4 px-[calc(50vw-600px)] bg-black py-[50px] relative text-white mt-[100px]">
   <div class="flex gap-8">
     <div class="footer-box">
       <h3>About Us</h3>

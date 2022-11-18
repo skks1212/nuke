@@ -1,5 +1,5 @@
 <div class="w-full mb-10">
-    <a class="relative cursor-pointer block" href="product.php?p=<?= $product->id ?>">
+    <a class="relative cursor-pointer block" href="product?p=<?= $product->id ?>">
         <span class="absolute left-2 top-2 bg-slate-800 rounded-xl p-2">-<?= $product->discount ?>%</span>
         <img src="med/products/<?= $product->photo ?>" alt="<?= $product->name ?>" class="w-full aspect-square bg-white rounded-xl">
         <h3 class="text-2xl font-semibold py-2"><?= $product->name ?> </h3>
@@ -25,7 +25,7 @@
 <script>
     function addToCart(id) {
 
-        fetch("add-to-cart.php?id=" + id, {
+        fetch("add-to-cart?id=" + id, {
             method: "GET",
         }).then((response) => response.text()).then((data) => {
             console.log(data);

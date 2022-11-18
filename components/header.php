@@ -8,13 +8,13 @@
         </div>
     </div>
     <div class="flex items-center justify-between">
-        <a href="home.php" class="nav_button">
+        <a href="home" class="nav_button">
             Home
         </a>
-        <a href="catalogue.php" class="nav_button">
+        <a href="catalogue" class="nav_button">
             Catalogue
         </a>
-        <a href="cart.php" class="nav_button">
+        <a href="cart" class="nav_button">
             <i class="far fa-shopping-cart"></i> <?= isset($_SESSION["cart"]) ? count($_SESSION["cart"]) : "" ?>
         </a>
         <!--<a href="#" class="nav_button">
@@ -23,13 +23,13 @@
         <?php
         if (isset($user)) {
         ?>
-            <a href="profile.php" class="nav_button flex items-center gap-2">
+            <a href="profile" class="nav_button flex items-center gap-2">
                 <i class="far fa-user-circle"></i> <?php echo $user->name; ?>
             </a>
         <?php
         } else {
         ?>
-            <a href="login.php" class="bg-[#009393] text-white px-4 py-2 ml-4 rounded transition-all hover:bg-[#016170]">
+            <a href="login" class="bg-[#009393] text-white px-4 py-2 ml-4 rounded transition-all hover:bg-[#016170]">
                 Login
             </a>
         <?php

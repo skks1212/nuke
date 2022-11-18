@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['payment'])) {
     if (!isset($_SESSION['user_id'])) {
-        header("Location: login.php");
+        header("Location: login");
     }
     $address = $_POST['address'];
     $payment = $_POST['payment'];
@@ -13,6 +13,6 @@ if (isset($_POST['payment'])) {
         $total += $product->price * (1 - $product->discount / 100);
         mysqli_safe_query("INSERT INTO orders (user, product, address, payment_mode, payment, time) VALUES (%d, %d, %s, %s, %d, %d)", $user_id, $product->id, $address, $payment, $product->price * (1 - $product->discount / 100), time());
         $_SESSION["cart"] = [];
-        header("Location: profile.php?placed=true");
+        header("Location: profile?placed=true");
     }
 }

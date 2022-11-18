@@ -18,7 +18,7 @@ if (isset($_POST["email"])) {
         $query = "INSERT INTO users (name, email, phone, password, salt) VALUES ('$name', '$email', '$phone', '$hash_password', '$salt')";
         $result = mysqli_safe_query($query);
         if ($result) {
-            header("Location: login.php");
+            header("Location: login");
         } else {
             echo "Error: " . $query . "<br>" . mysqli_error($con);
             exit;

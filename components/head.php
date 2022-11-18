@@ -9,6 +9,7 @@
     <title>
         Nuke - The most explosive footwear in town
     </title>
+    <link rel="icon" href="med/logo.png" type="image/png" sizes="16x16">
 
     <?php include "inc/fn/auth.php"; ?>
 

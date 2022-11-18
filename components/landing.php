@@ -1,4 +1,4 @@
-<div style="background:url('med/blur.svg');background-size:cover;background-position:center;" class="h-[calc(100vh+200px)] pb-[200px] flex items-center gap-20 justify-between px-[calc(50vw-600px)]">
+<div style="background:url('med/steps_2.svg');background-size:cover;background-position:center;background-attachment:fixed;" class="h-[calc(100vh+200px)] pb-[200px] flex items-center gap-20 justify-between px-[calc(50vw-600px)]">
     <div class="text-[#00E0C6] text-7xl font-bold">
         Shoes just
         got an upgrade

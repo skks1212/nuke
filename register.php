@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div class="footer-link padding-top--24">
-                        <span>Already have an account? <a href="login.php">Sign in</a></span>
+                        <span>Already have an account? <a href="login">Sign in</a></span>
                         <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
                             <span><a href="#">&copy; Nuke</a></span>
                             <span><a href="#">Contact</a></span>

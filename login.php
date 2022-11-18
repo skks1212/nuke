@@ -78,7 +78,7 @@
             </div>
           </div>
           <div class="footer-link padding-top--24">
-            <span>Don't have an account? <a href="register.php">Sign up</a></span>
+            <span>Don't have an account? <a href="register">Sign up</a></span>
             <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
               <span><a href="#">&copy; Nuke</a></span>
               <span><a href="#">Contact</a></span>
