@@ -6,7 +6,7 @@ session_start();
 if (isset($_SESSION["user_id"])) {
     $get_user = mysqli_safe_query("SELECT * FROM users WHERE id = %d", $_SESSION["user_id"]);
     if (!mysqli_num_rows($get_user)) {
-        header("Location: login");
+        header("Location: logout");
     }
 
     $user = mysqli_fetch_object($get_user);
