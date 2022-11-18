@@ -21,7 +21,6 @@ if (isset($message)) {
          <a href="dashboard">home</a>
          <a href="products">products</a>
          <a href="orders">orders</a>
-         <a href="users">users</a>
          <a href="../">website</a>
       </nav>
 
