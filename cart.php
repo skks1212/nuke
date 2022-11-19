@@ -13,13 +13,12 @@
                 echo "Your cart is empty";
             } else {
                 $cart = $_SESSION["cart"];
-                $products = mysqli_safe_query("SELECT * FROM products WHERE id IN (" . implode(",", $cart) . ")",);
-                while ($product = mysqli_fetch_object($products)) {
+                foreach ($cart as $key => $product_id) {
+                    $product = mysqli_fetch_object(mysqli_safe_query("SELECT * FROM products WHERE id = %s", $product_id));
                     $total += $product->price;
                     $discounted += $product->price * (1 - ($product->discount / 100));
                     include "components/item.php";
                 }
-
             ?>
         </div>
         Total : ₹<span class="line-through"><?= $total ?></span> ₹<span class="font-bold text-lg"><?= $discounted ?></span> <br>
