@@ -9,12 +9,12 @@
 
 - [x] Login
 - [x] Register
-
 - [x] Home
+
 - [x] Profile
 - [x] Cart
 - [x] Checkout
 
-- [ ] Admin view and edit users
-- [ ] Admin view and edit Products
-- [ ] Admin view and edit Orders
+- [x] Admin dashboard
+- [x] Admin view and edit Products
+- [x] Admin view and edit Orders
